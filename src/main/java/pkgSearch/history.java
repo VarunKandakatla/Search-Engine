@@ -29,10 +29,10 @@ public class history extends HttpServlet {
                 results.add(historyresult);
             }
 
-            for(historyResult historyresult : results)
-            {
-                System.out.println(historyresult.getName()+" "+historyresult.getLink()+"\n");
-            }
+//            for(historyResult historyresult : results)
+//            {
+//                System.out.println(historyresult.getName()+" "+historyresult.getLink()+"\n");
+//            }
 
             request.setAttribute("results",results);
             request.getRequestDispatcher("history.jsp").forward(request,response);
